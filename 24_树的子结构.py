@@ -8,9 +8,7 @@ class Solution:
     def HasSubtree(self, pRoot1, pRoot2):
         if not (pRoot1 and pRoot2):
             return False
-        return self.hassub(pRoot1, pRoot2) or self.HasSubtree(pRoot1.left, pRoot2) or self.HasSubtree(pRoot1.right,
-                                                                                                      pRoot2)
-
+        return self.hassub(pRoot1, pRoot2) or self.HasSubtree(pRoot1.left, pRoot2) or self.HasSubtree(pRoot1.right,pRoot2)
     def hassub(self, A, B):
         if not B:
             return True
